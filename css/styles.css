@@ -254,7 +254,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #2e2F42;
+  fill: #2e2f42;
 }
 
 .preference-name {
@@ -739,6 +739,10 @@ body {
   padding: 72px 24px 24px 24px;
 }
 
+.modal-field {
+  margin-bottom: 8px;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -805,12 +809,12 @@ body {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
-  border: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
 }
 
 .modal-input:focus + .modal-icon {
@@ -818,7 +822,7 @@ body {
 }
 
 .modal-input:hover {
-  border: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
 }
 
 .modal-input:hover + .modal-icon {
@@ -831,12 +835,12 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-  display: inline-block;
+  display: block;
 }
 
 .modal-icon {
   fill: #2e2f42;
-  left: 18px;
+  left: 16px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -850,21 +854,26 @@ body {
 .modal-textarea {
   width: 100%;
   height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--modal-overlay);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
   outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  padding: 8px 16px;
+  color: var(--modal-overlay);
+  font-size: 12px;
+  padding-top: 8px;
+  line-height: 1.17px;
+  letter-spacing: 0.04em;
 }
 
 .modal-textarea:focus {
-  border: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
 }
 
 .modal-textarea:hover {
-  border: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
 }
 
 .modal-textarea::placeholder {
@@ -872,7 +881,11 @@ body {
   padding-top: 8px;
   line-height: 1.17px;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--modal-overlay);
+}
+
+.modal-checkbox {
+  margin-bottom: 24px;
 }
 
 .check-text {
@@ -885,11 +898,11 @@ body {
 }
 
 .privacy {
+  display: inline-flex;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--modal-overlay);
   border-radius: 2px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
