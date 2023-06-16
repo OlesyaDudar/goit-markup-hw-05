@@ -897,12 +897,12 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  display: flex;
+  display: inline-flex;
   gap: 8px;
 }
 
 .privacy {
-  display: inline-flex;
+ 
   width: 16px;
   height: 16px;
   border: 1px solid var(--modal-overlay);
