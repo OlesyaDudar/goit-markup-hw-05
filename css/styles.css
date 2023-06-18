@@ -917,9 +917,9 @@ body {
 .check-text a {
   color: var(--primary-brand);
 }
-.input-check:focus + .check-text span  { border-color: #404BBF;}
-
-.input-check:hover + .check-text span  { border-color: #404BBF;}
+.input-check:focus + .check-text span {
+  border-color: #404bbf;
+}
 
 .input-check:checked + .check-text span {
   background-color: var(--pressed-state);
